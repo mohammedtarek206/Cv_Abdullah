@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('splash.jpg'); /* استبدل باسم صورة الخلفية */
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+/* تصميم الكونتينر */
+.container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* الصورة الشخصية */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* تأثير Hover للصورة */
+.profile-img:hover {
+    transform: scale(1.1);
+}
+
+/* رقم الهاتف */
+.phone {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* لينكد إن */
+.linkedin {
+    text-decoration: none;
+    color: #0a66c2;
+    font-size: 18px;
+    font-weight: bold;
+    background: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+/* تأثير Hover للينكد إن */
+.linkedin:hover {
+    background: #0a66c2;
+    color: white;
+    transform: scale(1.1);
+}
